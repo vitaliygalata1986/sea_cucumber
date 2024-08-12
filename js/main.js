@@ -43,18 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
     duration: 1,
   });
 
-  gsap.from('.animate__fadeInRight', {
-    scrollTrigger: {
-      trigger: '.swiper',
-      start: 'top 80%', // когда элемент в зоне видимости
-    },
-    opacity: 0,
-    x: 100, // смещение вправо
-    duration: 1, // длительность анимации
-    delay: 3, // задержка перед началом
-    ease: 'power2.out', // тип easing
-  });
-
   gsap.from('.title-product', {
     scrollTrigger: {
       trigger: '.title-product',
@@ -76,15 +64,27 @@ document.addEventListener('DOMContentLoaded', function () {
     ease: 'power2.out', // тип easing
   });
 
-  gsap.from('.two-section-text', {
+  gsap.from('.two-section-text-1', {
     scrollTrigger: {
-      trigger: '.two-section-text',
+      trigger: '.two-section-text-1',
       start: 'top 80%', // когда элемент в зоне видимости
     },
     opacity: 0,
     x: -100, // смещение влево
     duration: 1, // длительность анимации
     ease: 'power2.out', // тип easing
+  });
+
+  gsap.from('.two-section-text-2', {
+    scrollTrigger: {
+      trigger: '.two-section-text-2',
+      start: 'top 80%', // когда элемент в зоне видимости
+    },
+    opacity: 0,
+    x: -100, // смещение влево
+    duration: 1, // длительность анимации
+    ease: 'power2.out', // тип easing
+    delay: 3, // задержка перед началом анимации
   });
 
   gsap.from('.svg-icon-animate__animated', {
@@ -120,17 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
     delay: 3, // задержка перед началом анимации
     ease: 'power2.out', // тип easing
   });
-    gsap.from('.animate__animated_3s', {
-      scrollTrigger: {
-        trigger: '.animate__animated_3s',
-        start: 'top 80%', // когда элемент в зоне видимости
-      },
-      opacity: 0,
-      scale: 0.5, // уменьшение размера для эффекта zoomIn
-      duration: 1, // длительность анимации
-      delay: 3, // задержка перед началом анимации
-      ease: 'power2.out', // тип easing
-    });
 
   gsap.from('.foo-text.client-head.client-head-4', {
     scrollTrigger: {
@@ -245,29 +234,6 @@ document.addEventListener('DOMContentLoaded', function () {
       toggleActions: 'play none none none', // Play the animation once on scroll
     },
   });
-  gsap.from('.img-two-section-y', {
-    opacity: 0,
-    x: 100, // Moves the image from right to left (adjust value as needed)
-    duration: 1, // Duration of the animation
-    delay: 1, // Initial delay before the animation starts
-    scrollTrigger: {
-      trigger: '.img-two-section-y',
-      start: 'top 80%', // Start the animation when the element is 80% from the top of the viewport
-      toggleActions: 'play none none none', // Play the animation once on scroll
-    },
-  });
-
-  gsap.from('.two-section-texted', {
-    opacity: 0,
-    x: 100, // Moves the image from right to left (adjust value as needed)
-    duration: 1, // Duration of the animation
-    delay: 2, // Initial delay before the animation starts
-    scrollTrigger: {
-      trigger: 'two-section-texted',
-      start: 'top 80%', // Start the animation when the element is 80% from the top of the viewport
-      toggleActions: 'play none none none', // Play the animation once on scroll
-    },
-  });
 
   gsap.from('.animate__4s', {
     opacity: 0,
@@ -316,17 +282,16 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-
-gsap.from('.four-acss', {
-  opacity: 0,
-  duration: 1, // Duration of the fade-in effect
-  delay: 2, // Initial delay before the animation starts
-  scrollTrigger: {
-    trigger: '.four-acss',
-    start: 'top 80%', // Start the animation when the element is 80% from the top of the viewport
-    toggleActions: 'play none none none', // Play the animation once on scroll
-  },
-});
+  gsap.from('.four-acss', {
+    opacity: 0,
+    duration: 1, // Duration of the fade-in effect
+    delay: 2, // Initial delay before the animation starts
+    scrollTrigger: {
+      trigger: '.four-acss',
+      start: 'top 80%', // Start the animation when the element is 80% from the top of the viewport
+      toggleActions: 'play none none none', // Play the animation once on scroll
+    },
+  });
 
   const swiper = new Swiper('.img-vision .swiper', {
     loop: true,
