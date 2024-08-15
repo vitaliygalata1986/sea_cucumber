@@ -146,39 +146,6 @@ document.addEventListener('DOMContentLoaded', function () {
     ease: 'power2.out', // тип easing
   });
 
-  gsap.from('.foo-text.client-head.client-head-4', {
-    scrollTrigger: {
-      trigger: '.foo-text.client-head',
-      start: 'top 80%', // когда элемент в зоне видимости
-    },
-    opacity: 0,
-    duration: 1, // длительность анимации
-    delay: 3, // задержка перед началом анимации
-    ease: 'power2.out', // тип easing
-  });
-
-  gsap.from('.foo-text.client-head-11', {
-    opacity: 0,
-    duration: 1, // Adjust the duration as needed
-    delay: 2, // Initial delay before animation starts
-    scrollTrigger: {
-      trigger: '.foo-text.client-head',
-      start: 'top 80%', // Animation will start when the element is 80% from the top of the viewport
-      toggleActions: 'play none none none', // Animation will play once on scroll
-    },
-  });
-
-  gsap.from('.client-head.client-head-h2', {
-    opacity: 0,
-    duration: 1, // Duration of the fade-in effect
-    delay: 1, // Initial delay before the animation starts
-    scrollTrigger: {
-      trigger: '.client-head',
-      start: 'top 80%', // Start the animation when the element is 80% from the top of the viewport
-      toggleActions: 'play none none none', // Play the animation once on scroll
-    },
-  });
-
   gsap.from('.aqua-p', {
     opacity: 0,
     duration: 1, // Duration of the fade-in effect
@@ -342,18 +309,46 @@ document.addEventListener('DOMContentLoaded', function () {
   const swiperHer = new Swiper('.img-vision.img-vision-her .swiper', {
     loop: true,
     slidesPerView: 1,
-    // If we need pagination
+
+    on: {
+      slideChange: function () {
+        // Проверяем, что мы находимся на первом слайде после просмотра всех остальных
+        console.log(
+          `Current slide index: ${this.realIndex}, Previous slide index: ${this.previousIndex}`
+        );
+
+        if (
+          this.realIndex === 0 &&
+          this.previousIndex === this.slides.length - 1
+        ) {
+          // Находим первый слайд
+          const firstSlideImg = document.querySelector('.ogirfirst');
+
+          if (firstSlideImg) {
+            console.log(
+              'Removing animation classes from the first slide image'
+            );
+            // Удаляем классы анимации
+            firstSlideImg.classList.remove(
+              'animate__animated',
+              'animate__fadeInUp',
+              'animate__delay-1s'
+            );
+          } else {
+            console.log('First slide image not found');
+          }
+        }
+      },
+    },
+
     pagination: {
       el: '.swiper-pagination',
     },
-
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
 
-    // And if we need scrollbar
     scrollbar: {
       el: '.swiper-scrollbar',
     },
