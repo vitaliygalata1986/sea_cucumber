@@ -465,8 +465,8 @@ h1 {
 
 .four-section .clients .clients-img {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   transform: translate(-50%, -50%);
 }
 .client-p {
@@ -659,13 +659,15 @@ h1 {
 }
 
 /* Стиль и анимация для изображения */
-.image-container img {
+.image-container img,
+.clients-img {
   animation: rotate 4s linear infinite;
   position: absolute;
   top: 0;
   left: 0;
   transform: translate(-50%, -50%);
 }
+
 /* .clients-img {
  
 } */

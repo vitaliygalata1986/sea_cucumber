@@ -105,7 +105,32 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     opacity: 0,
     x: 100, // смещение вправо для эффекта fadeInRight
-    duration: 1, // длительность анимации
+    delay: 1, // длительность анимации
+    duration: 1,
+    ease: 'power2.out', // тип easing
+  });
+
+  gsap.from('.swiper-animate__fadeInRight1', {
+    scrollTrigger: {
+      trigger: '.swiper-animate__fadeInRight1',
+      start: 'top 80%', // когда элемент в зоне видимости
+    },
+    opacity: 0,
+    x: 100, // смещение вправо для эффекта fadeInRight
+    delay: 2, // задержка перед началом анимации
+    duration: 2, // длительность анимации
+    ease: 'power2.out', // тип easing
+  });
+
+  gsap.from('.swiper-animate__fadeInRight2', {
+    scrollTrigger: {
+      trigger: '.swiper-animate__fadeInRight2',
+      start: 'top 80%', // когда элемент в зоне видимости
+    },
+    opacity: 0,
+    x: 100, // смещение вправо для эффекта fadeInRight
+    delay: 2.5, // задержка перед началом анимации
+    duration: 2, // длительность анимации
     ease: 'power2.out', // тип easing
   });
 
