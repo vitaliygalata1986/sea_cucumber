@@ -287,20 +287,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const swiper = new Swiper('.img-vision .swiper', {
     loop: true,
-    slidesPerView: 3,
-    spaceBetween: 19,
-    // If we need pagination
+
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 8,
+      },
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 19,
+      },
+    },
     pagination: {
       el: '.swiper-pagination',
     },
 
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
 
-    // And if we need scrollbar
     scrollbar: {
       el: '.swiper-scrollbar',
     },
