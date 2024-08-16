@@ -863,3 +863,78 @@ h1 {
 .foo-text.foo-text {
   align-self: flex-start;
 }
+
+@media (max-width: 1700px) {
+  .other-section__block {
+    flex: 1 1 75%;
+  }
+  .btn-contact {
+    left: 38%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .other-section__block {
+    flex: 1 1 50%;
+  }
+  .btn-contact {
+    left: 25%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .vision,
+  .two-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .four-section {
+    padding: 66px 15px;
+  }
+  .product-section .container,
+  .header .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-nav {
+    width: 100%;
+  }
+  .other-section {
+    width: 100%;
+  }
+  .container-two-double {
+    margin-right: 0;
+  }
+  .two-section {
+    height: auto;
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 1366px) {
+  .background-section {
+    padding-top: 150px;
+  }
+  .image-container img,
+  .clients-img {
+    left: 22%;
+  }
+  .btn-contact {
+    left: 47%;
+  }
+  .four-section {
+    gap: 25px;
+  }
+  .product-section {
+    padding-bottom: 100px;
+  }
+  .footer {
+    padding: 100px 0 100px;
+  }
+  .product {
+    margin-top: 60px;
+  }
+  .vision-mission {
+    gap: 30px;
+  }
+}
