@@ -1232,6 +1232,42 @@ h1 {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .client-head {
+    font-size: 32px;
+  }
+  .five-section {
+    padding-bottom: 50px;
+  }
+  .four-acss > div svg {
+    display: none;
+  }
+  .four-acss .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .four-acss .container div p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .four-section .clients-img.clients-icon-1 {
+    left: 7%;
+    height: 390px;
+    width: 390px;
+    top: 9%;
+  }
+  .four-acss {
+    padding-bottom: 0px;
+  }
+  .client-p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .four-section .clients {
+    gap: 15px;
+    width: 100%;
+    height: 470px;
+  }
 }
 @media (max-width: 440px) {
   .footer-logo svg:first-of-type {
@@ -1239,5 +1275,23 @@ h1 {
   }
   .footer-logo svg:last-of-type {
     right: -40%;
+  }
+  .four-section .clients-img.clients-icon-1 {
+    left: 4%;
+  }
+  .client-p {
+    max-width: 275px;
+  }
+  .four-section .clients-img.clients-icon-1 {
+    height: 375px;
+    width: 375px;
+  }
+}
+
+@media (max-width: 430px) {
+  .four-section .clients-img.clients-icon-1 {
+    height: 360px;
+    width: 360px;
+    top: 12%;
   }
 }
