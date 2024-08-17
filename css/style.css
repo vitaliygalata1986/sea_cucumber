@@ -23,6 +23,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.hide-desctop {
+  display: none;
+}
 .container {
   max-width: 1436px;
   margin: 0 auto;
@@ -959,6 +962,7 @@ h1 {
   }
   .foo-p1 {
     font-size: 20px;
+    padding: 10px 0 25px;
   }
   .product-icon a img {
     height: 70px;
@@ -1244,12 +1248,39 @@ h1 {
   .four-acss .container {
     flex-direction: column;
     gap: 20px;
+    max-width: 300px;
   }
   .four-acss .container div p {
     font-size: 20px;
   }
+  .super-foo {
+    position: unset;
+    align-self: flex-start;
+  }
+  .superfood {
+    flex-direction: column;
+  }
+  .superfood {
+    width: 100%;
+  }
+  .section-three-food {
+    margin: 0;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .hide-desctop {
+    display: block;
+    width: 100%;
+  }
 }
 @media (max-width: 480px) {
+  .section-three-food {
+    margin: 0;
+  }
+  .section-three {
+    padding: 30px 15px;
+  }
   .four-section .clients-img.clients-icon-1 {
     left: 7%;
     height: 390px;
@@ -1293,5 +1324,13 @@ h1 {
     height: 360px;
     width: 360px;
     top: 12%;
+  }
+}
+
+@media (max-width: 375px) {
+  .four-section .clients-img.clients-icon-1 {
+    height: 345px;
+    width: 345px;
+    left: 0;
   }
 }
