@@ -890,7 +890,7 @@ h1 {
     padding-right: 15px;
   }
   .four-section {
-    padding: 66px 15px;
+    padding: 15px 15px;
   }
   .product-section .container,
   .header .container {
@@ -913,15 +913,138 @@ h1 {
 }
 
 @media (max-width: 1366px) {
+  .header-menu li a {
+    font-size: 22px;
+  }
+  .foo-btn {
+    width: 185px;
+    height: 65px;
+    font-size: 24px;
+  }
+  .foo-text-parag {
+    font-size: 24px;
+  }
+  .foo-head {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .footer h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+  .clients-icon.clients-icon-1 img {
+    height: 48px;
+  }
+  .client-p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .aqua-p p {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .client-head {
+    font-size: 42px;
+  }
+  .acquaculture .client-head {
+    margin-bottom: 30px;
+  }
+  .img-superfood.superfood-2 {
+    height: 315px;
+  }
+  .foo-p1 {
+    font-size: 22px;
+  }
+  .product-icon a img {
+    height: 70px;
+  }
+  .img-two-double {
+    padding-right: 5px;
+  }
+  .img-two-double {
+    height: 260px;
+  }
+  .img-two-section {
+    padding-left: 10px;
+    height: 260px;
+  }
+  .product-icon a div p {
+    font-size: 20px;
+  }
+  .title-product {
+    font-size: 40px;
+  }
+  .product-icon a div h3 {
+    font-size: 30px;
+  }
+  .paragraf .parag {
+    font-size: 22px;
+  }
+  .vision-head {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .img-vision.img-vision-her .swiper-button-prev {
+    left: 7px;
+  }
+  .img-vision .swiper-button-prev:after {
+    height: 38px;
+    width: 40px;
+  }
+  .img-vision .swiper-button-next:after {
+    height: 38px;
+    width: 38px;
+  }
+  .first-section {
+    margin-bottom: 70px;
+  }
+  .img-vision.img-vision-her .swiper-button-next {
+    right: 43px;
+  }
+  .img-vision .swiper-pagination {
+    left: 52% !important;
+  }
+  .img-vision.img-vision-her img {
+    height: 240px;
+  }
+  .cucumber-h-block {
+    height: 240px;
+  }
+  .cucumber-h-img img {
+    height: 60px;
+  }
+  .parag {
+    padding: 15px;
+    font-size: 24px;
+  }
+  .big-logo {
+    height: 115px;
+  }
+  .basic-head {
+    font-size: 48px;
+  }
   .background-section {
-    padding-top: 150px;
+    padding-top: 100px;
   }
   .image-container img,
   .clients-img {
-    left: 22%;
+    left: 28%;
+    width: 240px;
+    height: 240px;
+    top: 25px;
   }
+  .four-section .clients-img.clients-icon-1 {
+    height: 410px;
+    width: 410px;
+    left: 11%;
+    top: 14%;
+  }
+
   .btn-contact {
     left: 47%;
+    width: 180px;
+    height: 60px;
+    font-size: 30px;
   }
   .four-section {
     gap: 25px;
@@ -937,6 +1060,14 @@ h1 {
   }
   .vision-mission {
     gap: 30px;
+    align-items: center;
+  }
+
+  .vision-mission .img-vision img {
+    height: 300px;
+  }
+  .img-vision .swiper {
+    max-width: 630px;
   }
 }
 
