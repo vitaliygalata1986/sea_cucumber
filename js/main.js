@@ -1,6 +1,28 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const body = document.body;
   const textElement = document.getElementById('animated-text');
   const words = textElement.querySelectorAll('.word');
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.header-menu');
+  const menuLinks = mobileMenu.querySelectorAll('a');
+  if (hamburger !== null) {
+    hamburger.addEventListener(
+      'click',
+      function () {
+        this.classList.toggle('is-active');
+        mobileMenu.classList.toggle('header-menu__open');
+        body.classList.toggle('overflow');
+      },
+      false
+    );
+    menuLinks.forEach((link) => {
+      link.addEventListener('click', function () {
+        hamburger.classList.remove('is-active');
+        mobileMenu.classList.remove('header-menu__open');
+        document.body.classList.remove('overflow');
+      });
+    });
+  }
 
   words.forEach((word) => {
     const text = word.textContent;
