@@ -1122,6 +1122,7 @@ h1 {
   }
   .product-icon {
     flex-wrap: wrap;
+    gap: 10px;
   }
   .vision-mission {
     flex-wrap: wrap;
@@ -1292,9 +1293,41 @@ h1 {
   .container-two {
     padding-bottom: 60px;
   }
+  .img-two-section {
+    padding-left: 0;
+    object-fit: contain;
+  }
+
+  .two-section-new-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .product-section {
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 576px) {
+  .product-icon a img {
+    height: 56px;
+  }
+  .product-icon a div {
+    gap: 5px;
+  }
+  .product-icon a div h3 {
+    font-size: 24px;
+  }
+  .product-icon a div p {
+    font-size: 18px;
+  }
+  .title-product {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+  }
   .footer-logo svg:first-of-type {
     left: -30%;
   }
@@ -1356,6 +1389,16 @@ h1 {
   }
 }
 @media (max-width: 480px) {
+  .product-icon {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .two-section-new-img .img-two-section {
+    width: 45%;
+    height: 233px;
+    margin: 0;
+  }
+
   .section-three-food {
     margin: 0;
   }
@@ -1421,5 +1464,8 @@ h1 {
     height: 345px;
     width: 345px;
     left: 0;
+  }
+  .product-icon {
+    width: 70%;
   }
 }
