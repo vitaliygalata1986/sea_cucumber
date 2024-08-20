@@ -1178,6 +1178,18 @@ h1 {
 }
 
 @media (max-width: 767px) {
+  .basic-head {
+    font-size: 36px;
+  }
+  .background-section {
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .parag {
+    padding: 10px;
+    font-size: 20px;
+  }
   .header {
     padding: 5px 0;
   }
@@ -1310,6 +1322,78 @@ h1 {
 }
 
 @media (max-width: 576px) {
+  .img-vision .swiper-horizontal > .swiper-pagination-bullets,
+  .img-vision .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0px !important;
+  }
+  .img-vision .swiper-pagination {
+    left: 50% !important;
+  }
+  .img-vision .swiper {
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  .img-vision .swiper {
+    max-width: 500px;
+  }
+  .ogir2 {
+    margin: 0;
+  }
+  .vision-mission .img-vision img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .img-vision.img-vision-her img {
+    /* height: auto; */
+    max-width: 100px;
+    width: 200px;
+  }
+  .img-vision.img-vision-her .swiper {
+    max-width: 90%;
+    width: 90%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+  .background-section {
+    padding-top: 80px;
+  }
+  .paragraf .parag {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .vision-head {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .btn-contact {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 24px;
+  }
+  .basic-head {
+    font-size: 28px;
+  }
+  .cucumber-h-block {
+    height: auto;
+  }
+  .first-section {
+    margin-bottom: 20px;
+  }
+  .parag {
+    color: #fff;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .other-section__block {
+    flex-wrap: wrap;
+  }
+  .cucumber-h-block {
+    background-color: transparent;
+  }
   .product-icon a img {
     height: 56px;
   }

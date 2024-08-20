@@ -336,7 +336,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const swiperHer = new Swiper('.img-vision.img-vision-her .swiper', {
     loop: true,
-    slidesPerView: 1,
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 8,
+      },
+      577: {
+        slidesPerView: 1,
+      },
+    },
 
     on: {
       slideChange: function () {
