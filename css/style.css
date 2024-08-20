@@ -12,9 +12,12 @@
   --color-light: #eaf6ff;
   --color-light-green: #66e187;
 }
-/* h1, h2, p {
-  color: var(--color-white);
-} */
+#vision,
+#product,
+#clients,
+#contacts {
+  scroll-margin-top: 25px;
+}
 
 body {
   font-family: 'Tw Cen MT Std', sans-serif;
@@ -1363,7 +1366,7 @@ h1 {
     margin-top: 40px;
   }
   .background-section {
-    padding-top: 80px;
+    padding-top: 30px;
   }
   .paragraf .parag {
     font-size: 20px;
@@ -1483,11 +1486,23 @@ h1 {
     display: block;
     width: 100%;
   }
+  .cucumber-h-img {
+    gap: 10px;
+  }
+  .superfood2 {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 15px;
+  }
 }
 @media (max-width: 480px) {
   .basic-head {
     white-space: unset;
     text-align: center;
+  }
+  .foo-p1 {
+    font-size: 20px;
+    padding: 10px 0 20px;
   }
   .product-icon {
     width: 60%;
