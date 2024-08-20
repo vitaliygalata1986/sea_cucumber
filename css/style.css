@@ -495,6 +495,10 @@ h1 {
   font-weight: 400;
   font-size: 24px;
 }
+.two-section .container{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .acquaculture .client-head {
   margin-bottom: 55px;
 }
@@ -856,7 +860,7 @@ h1 {
 
 .img-vision .swiper {
   max-width: 705px;
-  padding: 0 19px;
+  padding: 0 19px 20px;
 }
 
 .img-vision .swiper-button-prev {
@@ -1042,7 +1046,7 @@ h1 {
     margin-bottom: 70px;
   }
   .img-vision.img-vision-her .swiper-button-next {
-    right: 43px;
+    right: 55px;
   }
   .img-vision .swiper-pagination {
     left: 52% !important;
