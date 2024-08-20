@@ -346,37 +346,6 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     },
 
-    on: {
-      slideChange: function () {
-        // Проверяем, что мы находимся на первом слайде после просмотра всех остальных
-        console.log(
-          `Current slide index: ${this.realIndex}, Previous slide index: ${this.previousIndex}`
-        );
-
-        if (
-          this.realIndex === 0 &&
-          this.previousIndex === this.slides.length - 1
-        ) {
-          // Находим первый слайд
-          const firstSlideImg = document.querySelector('.ogirfirst');
-
-          if (firstSlideImg) {
-            console.log(
-              'Removing animation classes from the first slide image'
-            );
-            // Удаляем классы анимации
-            firstSlideImg.classList.remove(
-              'animate__animated',
-              'animate__fadeInUp',
-              'animate__delay-1s'
-            );
-          } else {
-            console.log('First slide image not found');
-          }
-        }
-      },
-    },
-
     pagination: {
       el: '.swiper-pagination',
     },
