@@ -1358,6 +1358,9 @@ h1 {
 }
 
 @media (max-width: 576px) {
+  .container-two-double__img {
+    max-width: 100%;
+}
   .img-vision .swiper-horizontal > .swiper-pagination-bullets,
   .img-vision .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 0px !important;
@@ -1584,9 +1587,7 @@ h1 {
   .two-section {
     padding: 60px 15px 0;
   }
-  .two-section .img-two-double {
-    margin-right: 6px;
-  }
+
   .two-section .img-two-double:last-child {
     margin-right: 0;
   }
