@@ -159,11 +159,13 @@ h1 {
   border-radius: 20px;
 }
 
-/* .ogir2 {
-  height: 300px;
-  width: 220px;
-  margin-left: 20px;
-} */
+.paragraf.animate__paragraf {
+  flex: 1 1 auto;
+}
+
+.img-vision {
+  flex: 1 1 auto;
+}
 
 .first-section {
   margin-bottom: 162px;
