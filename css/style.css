@@ -960,7 +960,7 @@ h1 {
 
 @media (max-width: 1400px) {
   .header-menu li a {
-    font-size: 22px;
+    font-size: 20px;
   }
   .foo-btn {
     width: 185px;
@@ -1199,8 +1199,14 @@ h1 {
 }
 
 @media (max-width: 992px) {
+  .container-two-double__img{
+    justify-content: center;
+  }
+   .header-menu li a {
+    font-size: 20px;
+  }
   .header-menu {
-    gap: 30px;
+    gap: 25px;
   }
   .basic-head {
     font-size: 46px;
@@ -1306,9 +1312,8 @@ h1 {
   .container-two-double__img {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    row-gap: 11px;
-    column-gap: 3px;
+    row-gap: 8px;
+    column-gap: 8px;
   }
   .container-two-double__img img {
     flex: 1 1 auto;
