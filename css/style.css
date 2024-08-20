@@ -1591,6 +1591,12 @@ h1 {
   .two-section .img-two-double:last-child {
     margin-right: 0;
   }
+  .five-section br{
+    display: none;
+  }
+  .aqua-p {
+    gap: 20px;
+  }
 }
 @media (max-width: 440px) {
   .footer-logo svg:first-of-type {
