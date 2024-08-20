@@ -856,20 +856,21 @@ h1 {
 
 .img-vision .swiper {
   max-width: 705px;
-  padding: 27px;
+  padding: 0 19px;
 }
 
 .img-vision .swiper-button-prev {
-  left: 21px;
+  left: 11px;
 }
 
 .img-vision .swiper-button-next {
-  right: 10px;
+  right: 11px;
 }
 
 .img-vision.img-vision-her .swiper {
-  max-width: 240px;
+  max-width: 260px;
   padding: 0;
+  padding-left: 14px;
 }
 
 .img-vision.img-vision-her .swiper-pagination .swiper-pagination-bullet-active,
