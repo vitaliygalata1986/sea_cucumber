@@ -1494,6 +1494,7 @@ h1 {
   }
   .five-section {
     padding-bottom: 50px;
+    overflow: hidden;
   }
   .four-acss > div svg {
     display: none;
