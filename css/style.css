@@ -110,7 +110,7 @@ a:hover {
   height: 100%;
   flex-direction: column;
   align-items: center;
-  padding-top: 160px;
+  padding-top: 370px;
 }
 .parag {
   padding: 20px;
@@ -548,11 +548,11 @@ h1 {
 
 .five-section {
   background-image: linear-gradient(
-      to bottom,
-      rgba(0, 20, 39, 1),
-      rgba(0, 20, 39, 0)
-    ),
-    url(../images/block5.png);
+          to bottom,
+          rgba(0, 20, 39, 1),
+          rgba(0, 20, 39, 0)
+  ),
+  url(../images/block5.png);
   background-size: 100% 50%, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: top, center;
@@ -889,7 +889,7 @@ h1 {
 
 .img-vision.img-vision-her .swiper-horizontal > .swiper-pagination-bullets,
 .img-vision.img-vision-her
-  .swiper-pagination-bullets.swiper-pagination-horizontal {
+.swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 5px !important;
 }
 
